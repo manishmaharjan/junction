@@ -73,7 +73,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         views: {
           'tab-bmicalculator': {
             templateUrl: 'templates/tab-bmicalculator.html',
-            controller: 'BmiCalculatorCtrl'
+            controller: 'BmiCalculatorCtrl',
+            controllerAs: 'bmiCalcCtrl'
           }
         }
       })
