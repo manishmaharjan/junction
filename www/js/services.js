@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+var app = angular.module('starter.services', [])
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
@@ -40,7 +40,7 @@ angular.module('starter.services', [])
   };
 });
 
-.factory('menu-details', function() {
+app.factory('menu-details', function() {
  
  var list = [{
     id: 0,
