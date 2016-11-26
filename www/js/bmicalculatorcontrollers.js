@@ -1,6 +1,6 @@
 angular.module('starter.controllers')
     .controller('BmiCalculatorCtrl', [
-        "$scope",
+        "$scope",'chartjs-directive',
         function ($scope) {
             $scope.resultWeight = 0;
             $scope.numberWt = 0;
