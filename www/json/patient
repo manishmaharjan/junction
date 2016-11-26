@@ -1,0 +1,42 @@
+{
+    "resourceType":"Patient",
+    "id":"977",
+    "meta":{
+        "versionId":"1",
+        "lastUpdated":"2016-03-04T11:08:51.793+02:00"
+    },
+    "text":{
+        "status":"generated",
+        "div":"<div><div class=\"hapiHeaderText\"> Matti <b>MURO </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>040396-961S</td></tr><tr><td>Date of birth</td><td><span>04 March 1996</span></td></tr></tbody></table></div>"
+    },
+    "identifier":[
+        {
+            "use":"usual",
+            "type":{
+                "coding":[
+                    {
+                        "system":"urn:oid:1.2.246.21",
+                        "code":"nationalIdentificationNumber",
+                        "display":"Hetu "
+                    }
+                ],
+                "text":"Hetu "
+            },
+            "system":"urn:oid:1.2.246.21",
+            "value":"040396-961S"
+        }
+    ],
+    "active":true,
+    "name":[
+        {
+            "family":[
+                "Muro"
+            ],
+            "given":[
+                "Matti"
+            ]
+        }
+    ],
+    "gender":"male",
+    "birthDate":"1996-03-04"
+}
