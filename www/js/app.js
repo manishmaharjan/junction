@@ -23,21 +23,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     });
   })
 
-
-    .state('menu-details', {
-    url: "/menudetails",
-    abstract: true,
-    templateUrl: "templates/menu-details.html",
-    controller: 'MenudetailsCtrl'
-  })
-
-
-  .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
   .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     $ionicConfigProvider.tabs.position('bottom');
 
