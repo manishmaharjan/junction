@@ -1,23 +1,32 @@
-<ion-view view-title="BMI Calculator">
+<ion-view view-title="BMICalculator">
   <ion-content class="padding">
     <h2>BMI Calculator</h2>
-    <div>
-      <p ng-model>Weight: {{weight}}</p>
-      <input class="dropdown" type="number" min="0" ng-model="weight">
-      <br/>
-      <h3>Height</h3>
-      <p1 ng-model>Feet: </p1>
-      <input class="dropdown" type="number" min="0" max="8" ng-model="feet">
-      <br/>
-      <p1 ng-model>Inches: </p1>
-      <input class="dropdown" type="number" min="0" max="11" ng-model="inches">
-      <br/>
-      <p ng-model>Height in Inches: {{convertHeight(feet, inches)}}</p>
-      </input>
-      <h1>Your BMI is {{calcBMI(globalHeight,weight)}}</h1>
-      <h3>You are {{categorize(globalHeight, weight)}}</h3>
-      <div>{{category}}</div>
-      <div id="displayDiv"></div>
+    <div class="container">
+    <div class="row">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">ABC</legend>
+            <form action="">
+                <label for="txtHeight">Height <span class="mandateField">*</span></label>
+                <div class="form-group">
+                    <input type="text" data-ng-model="numberHt" valid-number class="form-control" placeholder="Enter height in centimeters" data-ng-change="txtHtChange()" />
+                </div>
+                <hr />
+                <div class="form-group">
+                    <label for="txtWeight">Weight <span class="mandateField">*</span></label>
+                    <input type="text" data-ng-model="numberWt" valid-number class="form-control" placeholder="Enter weight in Kgs" data-ng-change="txtWtChange()"/>
+                </div>
+                <button type="submit" class="btn btn-default" data-ng-disabled="!numberHt || !numberWt" data-ng-click="calculateBMI()">Calculate ABC</button>
+            </form>Height in meters: <span data-ng-bind="resultHeight" style="font-weight: bold;"></span>
+
+            <br />Weight in kgs: <span data-ng-bind="resultWeight" style="font-weight: bold;"></span>
+
+            <br />ABC: <span data-ng-bind="bmi"></span>
+
+        </fieldset>
     </div>
+    <p>DISCLAIMER - http://www.thecalculatorsite.com/conversions/common/meters-to-feet-inches.php</p>
+    <p>FULL DISCLAIMER - http://www.thecalculatorsite.com/disclaimer.php</p>
+    <i>BMI should be between 19 - 25</i>
+</div>
   </ion-content>
 </ion-view>
