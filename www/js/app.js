@@ -51,6 +51,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+   .state('menu', {
+    url: "/menu",
+    abstract: true,
+    templateUrl: "templates/menu.html",
+    controller: 'MenuCtrl'
+  })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
