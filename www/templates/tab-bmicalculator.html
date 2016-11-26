@@ -4,28 +4,25 @@
     <div class="container">
     <div class="row">
         <fieldset class="scheduler-border">
-            <legend class="scheduler-border">ABC</legend>
+            <legend class="scheduler-border">BMI</legend>
             <form action="">
                 <label for="txtHeight">Height <span class="mandateField">*</span></label>
                 <div class="form-group">
-                    <input type="text" data-ng-model="numberHt" valid-number class="form-control" placeholder="Enter height in centimeters" data-ng-change="txtHtChange()" />
+                    <input type="number" data-ng-model="bmiCalcCtrl.numberHt" class="form-control" placeholder="Enter height in centimeters"/>
                 </div>
                 <hr />
                 <div class="form-group">
                     <label for="txtWeight">Weight <span class="mandateField">*</span></label>
-                    <input type="text" data-ng-model="numberWt" valid-number class="form-control" placeholder="Enter weight in Kgs" data-ng-change="txtWtChange()"/>
+                    <input type="number" data-ng-model="bmiCalcCtrl.numberWt" class="form-control" placeholder="Enter weight in Kgs"/>
                 </div>
-                <button type="submit" class="btn btn-default" data-ng-disabled="!numberHt || !numberWt" data-ng-click="calculateBMI()">Calculate ABC</button>
-            </form>Height in meters: <span data-ng-bind="resultHeight" style="font-weight: bold;"></span>
+                <button type="submit" class="btn btn-default" data-ng-click="calculateBMI()">Calculate BMI</button>
+            </form>
 
-            <br />Weight in kgs: <span data-ng-bind="resultWeight" style="font-weight: bold;"></span>
-
-            <br />ABC: <span data-ng-bind="bmi"></span>
+            <br />BMI: <span data-ng-bind="bmi"></span>
 
         </fieldset>
     </div>
-    <p>DISCLAIMER - http://www.thecalculatorsite.com/conversions/common/meters-to-feet-inches.php</p>
-    <p>FULL DISCLAIMER - http://www.thecalculatorsite.com/disclaimer.php</p>
+    
     <i>BMI should be between 19 - 25</i>
 </div>
   </ion-content>
