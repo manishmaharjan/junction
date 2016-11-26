@@ -1,0 +1,23 @@
+<ion-view view-title="BMI Calculator">
+  <ion-content class="padding">
+    <h2>BMI Calculator</h2>
+    <div>
+      <p ng-model>Weight: {{weight}}</p>
+      <input class="dropdown" type="number" min="0" ng-model="weight">
+      <br/>
+      <h3>Height</h3>
+      <p1 ng-model>Feet: </p1>
+      <input class="dropdown" type="number" min="0" max="8" ng-model="feet">
+      <br/>
+      <p1 ng-model>Inches: </p1>
+      <input class="dropdown" type="number" min="0" max="11" ng-model="inches">
+      <br/>
+      <p ng-model>Height in Inches: {{convertHeight(feet, inches)}}</p>
+      </input>
+      <h1>Your BMI is {{calcBMI(globalHeight,weight)}}</h1>
+      <h3>You are {{categorize(globalHeight, weight)}}</h3>
+      <div>{{category}}</div>
+      <div id="displayDiv"></div>
+    </div>
+  </ion-content>
+</ion-view>
