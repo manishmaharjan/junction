@@ -1,0 +1,24 @@
+<ion-view view-title="Omat Tiedot">
+  <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="menus in list" type="item-text-wrap" href="#/tab/list/{{chat.id}}">
+      <ion-content class="padding">
+      <p>
+        {{menus.name}}
+      </p>
+      <p>
+        {{menus.id}}
+      </p>
+      <p>
+        {{menus.address}}
+      </p>
+      <p>
+        {{menus.postcode}}
+      </p>
+      <p>
+        {{menus.profession}}
+      </p>
+      <p>
+        {{menus.harrastukset}}
+      </p>
+    </ion-content>
+  </ion-item>
+</ion-view>

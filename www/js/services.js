@@ -39,3 +39,23 @@ angular.module('starter.services', [])
     }
   };
 });
+
+.factory('menu-details', function() {
+ 
+ var list = [{
+    id: 0,
+    name: 'Veijo leinonen',
+    address: 'Yliopilantie 19, Oulu',
+    postcode: '90130',
+    profession: 'Opiskelija',
+    harrastukset: 'Peli'
+  }
+    ];
+
+  return {
+    all: function() {
+      return list;
+    },
+  };
+});
+
