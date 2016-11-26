@@ -1,7 +1,7 @@
 <ion-view view-title="Message">
   <ion-content class="padding">
     <h2>Welcome Fabio to Message</h2>
-    <button ng-speech-recognition-start ng-speech-recognition-end="speech.displayTranscript()">
+    <button ng-speech-recognition-start="startSpeechRecognition()" ng-speech-recognition-end="speech.displayTranscript()">
         Press & Talk
     </button>
   </ion-content>
