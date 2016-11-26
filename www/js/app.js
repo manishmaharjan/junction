@@ -23,7 +23,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
    $ionicConfigProvider.tabs.position('bottom');
 
@@ -86,7 +85,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('tab.bmicalculator', {
     url: '/bmicalculator',
     views: {
-      'tab-activity': {
+      'tab-bmicalculator': {
         templateUrl: 'templates/tab-bmicalculator.html',
         controller: 'BmiCalculatorCtrl'
       }
