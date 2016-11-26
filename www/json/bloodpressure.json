@@ -1,0 +1,78 @@
+{
+    "resourceType":"Observation",
+    "id":"5640",
+    "meta":{
+        "versionId":"1",
+        "lastUpdated":"2016-04-07T10:10:48.243+03:00"
+    },
+    "text":{
+        "status":"generated",
+        "div":"<div><p>Blood pressure (systolic and diastolic) and also pulse in a single observation with LOINC code 55284-4 (as a section header). All measurement values in distinct variables: LOINC 8462-4 for diastolic, LOINC 8480-6 for systolic and LOINC 8867-4.</p></div>"
+    },
+    "status":"final",
+    "code":{
+        "coding":[
+            {
+                "system":"http://loinc.org",
+                "code":"55284-4",
+                "display":"Blood pressure systolic & diastolic, and also pulse"
+            }
+        ]
+    },
+    "subject":{
+        "reference":"Patient/749"
+    },
+    "effectiveDateTime":"2016-04-07",
+    "performer":[
+        {
+            "reference":"Patient/749"
+        }
+    ],
+    "component":[
+        {
+            "code":{
+                "coding":[
+                    {
+                        "system":"http://loinc.org",
+                        "code":"8462-4",
+                        "display":"Diastolic blood pressure"
+                    }
+                ]
+            },
+            "valueQuantity":{
+                "value":60,
+                "unit":"mm[Hg]"
+            }
+        },
+        {
+            "code":{
+                "coding":[
+                    {
+                        "system":"http://loinc.org",
+                        "code":"8480-6",
+                        "display":"Systolic blood pressure"
+                    }
+                ]
+            },
+            "valueQuantity":{
+                "value":107,
+                "unit":"mm[Hg]"
+            }
+        },
+        {
+            "code":{
+                "coding":[
+                    {
+                        "system":"http://loinc.org",
+                        "code":"8867-4",
+                        "display":"Pulse per minute"
+                    }
+                ]
+            },
+            "valueQuantity":{
+                "value":62,
+                "unit":"beats/min"
+            }
+        }
+    ]
+}

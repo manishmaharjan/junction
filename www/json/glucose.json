@@ -1,0 +1,43 @@
+{
+    "resourceType":"Observation",
+    "id":"5640",
+    "meta":{
+        "versionId":"1",
+        "lastUpdated":"2016-04-07T10:10:48.243+03:00"
+    },
+    "text":{
+        "status":"generated",
+        "div":"<div><p>Glucose level in blood for 10 days</p></div>"
+    },
+    "status":"final",
+    "code":{
+        "coding":[
+            {
+                "system":"http://loinc.org",
+                "code":"55284-4",
+                "display":"Glucose level in blood"
+            }
+        ]
+    },
+    "subject":{
+        "reference":"Patient/749"
+    },
+    "effectiveDateTime":"2016-04-07",
+    "performer":[
+        {
+            "reference":"Patient/749"
+        }
+    ],
+    "data":[
+        {"glucose": "165", "date": "2016-04-07T10:10:48.243+03:00"}, 
+        {"glucose": "150", "date": "2016-04-08T10:10:48.243+03:00"}, 
+        {"glucose": "178", "date": "2016-04-09T10:10:48.243+03:00"}, 
+        {"glucose": "183", "date": "2016-04-10T10:10:48.243+03:00"},
+        {"glucose": "171", "date": "2016-04-11T10:10:48.243+03:00"}, 
+        {"glucose": "162", "date": "2016-04-12T10:10:48.243+03:00"},
+        {"glucose": "158", "date": "2016-04-13T10:10:48.243+03:00"}, 
+        {"glucose": "167", "date": "2016-04-14T10:10:48.243+03:00"},
+        {"glucose": "153", "date": "2016-04-15T10:10:48.243+03:00"}, 
+        {"glucose": "149", "date": "2016-04-16T10:10:48.243+03:00"}
+    ]
+}
