@@ -56,6 +56,14 @@ app.factory('menu-details', function() {
     all: function() {
       return list;
     },
+ get: function(listId) {
+      for (var i = 0; i < list.length; i++) {
+        if (list[i].id === parseInt(listId)) {
+          return list[i];
+        }
+      }
+      return null;
+    }
   };
 });
 
