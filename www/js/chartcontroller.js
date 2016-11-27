@@ -11,9 +11,9 @@ angular.module('starter.controllers')
                     theme: "ocean"
                 },
                 data: [{
-                    label: "Bakersfield Central",
-                    value: "880000"
-                },
+                        label: "Bakersfield Central",
+                        value: "880000"
+                    },
                     {
                         label: "Garden Groove harbour",
                         value: "730000"
