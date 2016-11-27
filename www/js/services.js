@@ -66,4 +66,3 @@ app.factory('menu-details', function() {
     }
   };
 });
-
